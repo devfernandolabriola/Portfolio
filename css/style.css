@@ -1,0 +1,387 @@
+#imgPerfil,#Intro{
+    display:flex;
+    position:relative;
+    width:100%
+}
+
+#PerfilImg{
+    border-radius:200px !important;
+}
+
+#NomDes{
+    margin:auto;
+    padding:10px;
+}
+
+#video{
+    padding:40px;
+}
+
+#BloqueExp,#BloqueProyecto{
+    border-radius: 20px;
+    border: 0.5px solid;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-origin: center;
+}
+
+#BloqueExp{
+    border-color:#474536;
+}
+
+#BloqueProyecto{
+    border-color:#435153;
+}
+
+body,#Experiencia,#Proyectos{
+    background-color:#2e2e2e !important;
+    color:white;
+}
+
+#BloqueExp:hover,#BloqueProyecto:hover{
+ transform: scale(1.03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+#TituloSectionExp{
+    color:#ffeb3b;
+}
+
+#TituloSectionProyectos{
+    color:#00bcd4;
+}
+
+#TituloExp{
+    color:white !important;
+}
+
+#TituloSectionLeng,#TituloSectionHer{
+    color:#e91e63
+}
+
+#TituloSectionEst{
+    color:#8bc34a;
+}
+
+#inicio{
+    height: 100vh;
+    background: linear-gradient(to bottom, #2e2e2e 0%, #25313b 30%, #25313b 70%, #2e2e2e 100%);
+}
+
+@media (max-width: 768px) {
+  #imgPerfil img, 
+  #inicio img {
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 200px;
+  }
+
+  #Intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #NomDes {
+    padding: 1rem;
+    width:75% !important;
+  }
+
+  #BloqueExp,
+  #BloqueProyecto {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #BloqueExp .col-md-6,
+  #BloqueProyecto .col-md-6 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    padding: 0 !important;
+  }
+
+  #video {
+    padding: 0 !important;
+  }
+
+  #BloqueExp video,
+  #BloqueProyecto video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+
+  #BloqueExp:hover,
+  #BloqueProyecto:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+.ImgAndName {
+  box-sizing: border-box;
+  width: 150px;
+  height: 170px;
+  background-color: rgb(39, 38, 38);
+  border-radius: 15px;
+  margin: 10px;
+  transition: 0.3s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.ImgAndName img.imglenguaje {
+  width: auto;
+  height: 60px;
+  max-width: 100%;
+  max-height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.ImgAndName:hover {
+  box-shadow: 2px 2px 8px black;
+  transform: scale(1.1);
+}
+
+#Lenguajes,#Herramientas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+#navExp:hover{
+  color:#ffeb3b !important;
+  transition:0.3s;
+}
+
+#navPro:hover{
+  color:#00bcd4 !important;
+  transition:0.3s;
+}
+
+#navTec:hover{
+  color:#e91e63 !important;
+  transition:0.3s;
+}
+
+#navEst:hover{
+  color:#8bc34a !important;
+  transition:0.3s;
+}
+
+@media (min-width: 992px) {
+  nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030; 
+  }
+
+  body {
+    padding-top: 70px; 
+  }
+}
+
+.CertContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.CertCard {
+  width: 100%;
+  max-width: 300px;
+  background-color: rgb(39, 38, 38);
+  border-radius: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CertCard:hover {
+  box-shadow: 2px 2px 10px black;
+  transform: scale(1.03);
+}
+
+.cert-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.cert-title{
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.cert-year {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.view-btn {
+  background-color: #555;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.view-btn:hover {
+  background-color: #777;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  margin: 5% auto;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.close:hover {
+  color: #bbb;
+}
+
+@media (max-width: 480px) {
+  .cert-img {
+    height: 140px;
+  }
+
+  .CertCard {
+    max-width: 90%;
+  }
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 40px;
+  height: 40px;
+}
+
+#btnwpp:hover{
+  cursor:pointer;
+}
+
+.logoredes{
+  width:7vh;
+  padding:5px;
+}
+
+.logoredes:hover{
+  cursor:pointer;
+}
+
+
+#Footer{
+  color: #575050;
+}
+
+#Footer:hover {
+  background: linear-gradient(90deg, #c45cad, #14c0c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  transition:transform 0.3s ease;
+}
+
+#Nombre {
+  background: linear-gradient(90deg, #75d475, #df8d11);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  transition:transform 0.3s ease;
+}
+
+#bio{
+  padding-bottom:20px;
+}
+
+#IniContainer{
+  padding:20px;
+}
+
+
+.fade-in-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  will-change: opacity, transform; /* Mejora el rendimiento de la animación */
+}
+
+.fade-in-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
