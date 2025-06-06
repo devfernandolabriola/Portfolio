@@ -13,13 +13,13 @@ function abrirWhatsapp() {
 }
 
 function GetEmail(){
-  const email = "fernandolabrioladev@gmail.com";
-  return email;
+  const parts = ["fernandolabrioladev", "gmail.com"];
+  return parts.join("@");
 }
 
 function enviarmail(){
     const email = GetEmail();
-    window.location.href = `mailto:${email}`;
+    window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
 }
 
 let currentLang = 'es';
@@ -38,6 +38,7 @@ function toggleLanguage() {
     document.getElementById("navPro").textContent = "Projects";
     document.getElementById("navTec").textContent = "Technologies";
     document.getElementById("navEst").textContent = "Education";
+    document.getElementById("navCon").textContent = "Contact Me";
 
     // Intro
     document.querySelector("#Intro h1").textContent = "Fernando Labriola";
@@ -100,6 +101,7 @@ function toggleLanguage() {
     document.getElementById("navPro").textContent = "Proyectos";
     document.getElementById("navTec").textContent = "Tecnologías";
     document.getElementById("navEst").textContent = "Estudios";
+    document.getElementById("navCon").textContent = "Contacto";
 
     // Intro
     document.querySelector("#Intro h1").textContent = "Fernando Labriola";
