@@ -25,12 +25,12 @@ function enviarmail(){
 let currentLang = 'es';
 
 function toggleLanguage() {
-  const flagImg = document.getElementById("langFlag");
+  const flagImgs = document.querySelectorAll("#langFlag, #langFlagMobile");
 
   if (currentLang === 'es') {
     // Cambiar a inglés
     currentLang = 'en';
-    flagImg.src = "https://flagcdn.com/w40/es.png"; 
+    flagImgs.forEach(img => img.src = "https://flagcdn.com/w40/es.png");
 
     // Navbar
     document.querySelector('a.nav-link[href="#"]').textContent = "About Me";
@@ -90,10 +90,13 @@ function toggleLanguage() {
     certYears[1].textContent = "2025";
     certYears[2].textContent = "2025";
 
+    // Footer
+    document.getElementById("Footer").innerHTML = "&copy; 2025 Web made by Fernando Labriola"
+
   } else {
     // Volver a español
     currentLang = 'es';
-    flagImg.src = "https://flagcdn.com/w40/gb.png"; // Reino Unido
+    flagImgs.forEach(img => img.src = "https://flagcdn.com/w40/gb.png");
 
     // Navbar
     document.querySelector('a.nav-link[href="#"]').textContent = "Sobre mí";
@@ -152,6 +155,9 @@ function toggleLanguage() {
     certYears[0].textContent = "2024 - 2026";
     certYears[1].textContent = "2025";
     certYears[2].textContent = "2025";
+
+    // Footer
+    document.getElementById("Footer").innerHTML = "&copy; 2025 Web creada por Fernando Labriola"
   }
 }
 

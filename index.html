@@ -51,33 +51,57 @@
 
     </div>
   </nav>
-
-   <section id="inicio" class="py-5 fade-in-element">
+<section id="inicio" class="py-5 fade-in-element">
     <div id="IniContainer" class="container">
         <div class="row align-items-center" id="Intro">
-    
-      <div class="col-md-7" id="NomDes">
-        <h1 id="Nombre" class="display-4">Fernando Labriola</h1>
-        <p class="lead">Desarrollador Web</p>
-        <p id="bio">
-          Soy desarrollador web freelance con experiencia en e-commerce y sistemas B2B personalizados.
-          Trabajo con tecnologías como HTML, CSS, JavaScript, ASP.NET Core y SQL Server.
-          Combino una comunicación efectiva con clientes y buenas prácticas de desarrollo para entregar soluciones funcionales y escalables.
-          Inglés B2.
-        </p>
-          <a href="docs/Fernando Labriola CV.pdf" target="_blank" rel="noopener" style="display:inline;" download type="button" class="btn btn-success text-light">Descargar CV</a>
-          <a title="Github" style="display:inline;" href="https://github.com/devfernandolabriola" target="_blank" rel="noopener"><img class="logoredes" alt="github" src="https://pngimg.com/uploads/github/github_PNG80.png"></a>
-          <a title="Linkedin" href="https://www.linkedin.com/in/fernandolabrioladev/" target="_blank" rel="noopener"><img class="logoredes" alt="Linkedin" style="display:inline;" src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG27.png"></a>
-          <a rel="noopener" title="Fiverr"><img class="logoredes" alt="Fiverr" src="https://freelogopng.com/images/all_img/1656738037fiverr-icon-png.png"></a>
-          <a onclick="enviarmail()" id="gmail" target="_blank" rel="noopener" title="Enviar mail"> <img class="logoredes" alt="Gmail" src="https://www.pngall.com/wp-content/uploads/12/Gmail-Logo-PNG-Images.png"> </a>
-      </div>
-      
-      <div class="col-md-5 text-center">
-        <img id="PerfilImg" src="img/unnamed.jpg" alt="Foto de perfil" class="img-fluid rounded shadow">
-      </div>
+            <!-- Para mobile: imagen arriba -->
+            <div class="col-12 d-block d-md-none text-center mb-4">
+                <img id="PerfilImg" src="img/unnamed.jpg" alt="Foto de perfil" class="img-fluid rounded shadow">
+            </div>
+            
+            <div class="col-md-7 col-12" id="NomDes">
+                <h1 id="Nombre" class="display-5 text-center text-md-start">Fernando Labriola</h1>
+                <p class="lead text-center text-md-start">Desarrollador Web</p>
+                <p id="bio" class="text-center text-md-start">
+                    Soy desarrollador web freelance con experiencia en e-commerce y sistemas B2B personalizados.
+                    Trabajo con tecnologías como HTML, CSS, JavaScript, ASP.NET Core y SQL Server.
+                    Combino una comunicación efectiva con clientes y buenas prácticas de desarrollo para entregar soluciones funcionales y escalables.
+                    Inglés B2.
+                </p>
+
+                <div class="acciones">
+                    <!-- Botón CV -->
+                    <div class="mb-3">
+                        <a href="docs/Fernando Labriola CV.pdf" target="_blank" rel="noopener" download class="btn btn-success text-light">Descargar CV</a>
+                    </div>
+                    
+                    <!-- Logos redes sociales -->
+                    <div class="d-flex">
+                        <div class="d-grid redes-container" style="grid-template-columns: repeat(4, 1fr); gap: 10px;">
+                            <a title="Github" href="https://github.com/devfernandolabriola" target="_blank" rel="noopener">
+                                <img class="logoredes" alt="github" src="https://pngimg.com/uploads/github/github_PNG80.png">
+                            </a>
+                            <a title="Linkedin" href="https://www.linkedin.com/in/fernandolabrioladev/" target="_blank" rel="noopener">
+                                <img class="logoredes" alt="Linkedin" src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG27.png">
+                            </a>
+                            <a rel="noopener" title="Fiverr">
+                                <img class="logoredes" alt="Fiverr" src="https://freelogopng.com/images/all_img/1656738037fiverr-icon-png.png">
+                            </a>
+                            <a onclick="enviarmail()" id="gmail" target="_blank" rel="noopener" title="Enviar mail">
+                                <img class="logoredes" alt="Gmail" src="https://www.pngall.com/wp-content/uploads/12/Gmail-Logo-PNG-Images.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Para desktop: imagen a la derecha -->
+            <div class="col-md-5 d-none d-md-block text-center">
+                <img id="PerfilImg" src="img/unnamed.jpg" alt="Foto de perfil" class="img-fluid rounded shadow">
+            </div>
+        </div>
     </div>
-    </div>
-  </section>
+</section>
 
 
 <section id="Experiencia" class="py-5 bg-light fade-in-element">
@@ -267,6 +291,12 @@ El versionado fue gestionado con Git y GitHub. El diseño es responsive gracias 
   <img src="img/whatsapp-logo.png" alt="WhatsApp" />
 </a>
 
+  <button id="langToggle" class="lang-mobile-btn d-lg-none" onclick="toggleLanguage()" title="Change language">
+    <img id="langFlag" src="https://flagcdn.com/w40/gb.png" alt="Cambiar idioma" style="width: 24px; height: auto;">
+  </button>
+
+
+
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -288,21 +318,7 @@ El versionado fue gestionado con Git y GitHub. El diseño es responsive gracias 
   });
 </script>
 
-<!-- <script>
-  function openModal(imgElement) {
-    var modal = document.getElementById("CertModal");
-    var modalImg = document.getElementById("modalImg");
-    modal.style.display = "block";
-    modalImg.src = imgElement.src;
-  }
-
-  function closeModal() {
-    document.getElementById("CertModal").style.display = "none";
-  }
-</script> -->
-
 <script src="js/script.js"></script>
-
 </body>
 
 <footer class="bg-dark py-4">
