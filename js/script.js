@@ -53,7 +53,7 @@ function toggleLanguage() {
 
     // Sección Experiencia
     document.getElementById("TituloSectionExp").textContent = "Experience";
-    document.getElementById("TituloExpBlankspace").innerHTML = `Web developer`;
+    document.getElementById("TituloExpBlankspace").innerHTML = `Web Developer`;
     document.querySelector("#pBlankspace").textContent =
       `Redesigned and implemented a new interface using HTML, CSS, and JavaScript, improving user experience with a modern, responsive layout aligned with the brand identity.
       Updates were uploaded via FTP (FileZilla) and weekly deliveries managed through Jira.
