@@ -48,7 +48,7 @@ function toggleLanguage() {
     I combine effective client communication with best development practices to deliver functional and scalable solutions.
     English B2.`;
     document.querySelector("#Intro .btn-success").textContent = "My Resume";
-    document.querySelector("#Intro .btn-success").href = "https://drive.google.com/file/d/1JoRx1YiJPgeOIEHSFzLHUmpSCGaqRgKZ/view?usp=sharing";
+    document.querySelector("#Intro .btn-success").href = "https://drive.google.com/file/d/1l1SYN9Mmsj55z70dM08mQwsnxs-3x-N9/view?usp=sharing";
     document.getElementById('gmail').title = 'Send email';
 
     // Sección Experiencia
@@ -134,7 +134,7 @@ The project was version-controlled with Git and hosted on GitHub, making it easy
     Combino una comunicación efectiva con clientes y buenas prácticas de desarrollo para entregar soluciones funcionales y escalables.
     Inglés B2.`;
     document.querySelector("#Intro .btn-success").textContent = "Ver currículum";
-    document.querySelector("#Intro .btn-success").href = "https://drive.google.com/file/d/1T5C_YJvQuGfqNKoHP527Bvzv-Ur5Tv8H/view?usp=sharing";
+    document.querySelector("#Intro .btn-success").href = "https://drive.google.com/file/d/1QIYKtT8DSb9bjrv26p5umcpc03E3K5qC/view?usp=sharing";
     document.getElementById('gmail').title = 'Enviar mail';
 
     // Sección Experiencia
