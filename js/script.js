@@ -53,7 +53,7 @@ function toggleLanguage() {
 
     // Sección Experiencia
     document.getElementById("TituloSectionExp").textContent = "Experience";
-    document.getElementById("TituloExpBlankspace").innerHTML = `Frontend Developer <small>| Jan 2024 - Apr 2024</small>`;
+    document.getElementById("TituloExpBlankspace").innerHTML = `Web developer`;
     document.querySelector("#pBlankspace").textContent =
       `Redesigned and implemented a new interface using HTML, CSS, and JavaScript, improving user experience with a modern, responsive layout aligned with the brand identity.
       Updates were uploaded via FTP (FileZilla) and weekly deliveries managed through Jira.
@@ -139,7 +139,7 @@ The project was version-controlled with Git and hosted on GitHub, making it easy
 
     // Sección Experiencia
     document.getElementById("TituloSectionExp").textContent = "Experiencia";
-    document.getElementById("TituloExpBlankspace").innerHTML = `Desarrollador Frontend <small>| Enero 2024 - Abril 2024</small>`;
+    document.getElementById("TituloExpBlankspace").innerHTML = `Desarrollador Web`;
     document.querySelector("#pBlankspace").textContent =
       `Diseñé e implementé una nueva interfaz utilizando HTML, CSS y JavaScript, mejorando la experiencia del usuario con un diseño moderno, responsive y alineado a la identidad de marca.
       Subí los cambios vía FTP (FileZilla) y gestioné entregas semanales con Jira.
