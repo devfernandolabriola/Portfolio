@@ -59,6 +59,9 @@ function toggleLanguage() {
       Updates were uploaded via FTP (FileZilla) and weekly deliveries managed through Jira.
       The redesign improved user perception, increased customer trust, and contributed to higher sales margins.`;
 
+    document.querySelector("#pa1qa").textContent = 'Participation in the QA Academy training program by a1qa, focused on functional/manual testing. Utilized tools such as Slack for internal communication, JIRA and TestRail for test management, and VPN for secure access to testing environments. Tasks included designing and executing test cases, reporting bugs, and collaborating with mentors and team members.'
+
+
     // Sección Proyectos
     document.getElementById("TituloSectionProyectos").textContent = "Projects";
 
@@ -144,6 +147,8 @@ The project was version-controlled with Git and hosted on GitHub, making it easy
       `Diseñé e implementé una nueva interfaz utilizando HTML, CSS y JavaScript, mejorando la experiencia del usuario con un diseño moderno, responsive y alineado a la identidad de marca.
       Subí los cambios vía FTP (FileZilla) y gestioné entregas semanales con Jira.
       El rediseño mejoró la percepción del sitio, aumentó la confianza del cliente y contribuyó a un incremento en el margen de ventas.`;
+
+    document.querySelector("#pa1qa").textContent = 'Participación en el programa de formación QA Academy de a1qa, enfocado en testing funcional/manual. Uso de herramientas como Slack para comunicación interna, JIRA y TestRail para gestión de pruebas, y VPN para acceso seguro a entornos de testing. Tareas incluyen diseño y ejecución de casos de prueba, reporte de bugs y trabajo colaborativo con mentores y compañeros de equipo.'
 
     // Sección Proyectos
     document.getElementById("TituloSectionProyectos").textContent = "Proyectos";

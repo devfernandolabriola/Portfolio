@@ -16,6 +16,9 @@
 #video{
     padding:40px;
 }
+#imgexp{
+  width: 50%;
+}
 
 #BloqueExp,#BloqueProyecto{
     border-radius: 20px;
@@ -26,6 +29,11 @@
 
 #BloqueExp{
     border-color:#474536;
+}
+
+#Bloqueimgexp{
+  display:flex;
+  justify-content: center;
 }
 
 #BloqueProyecto{
@@ -90,6 +98,8 @@ body,#Experiencia,#Proyectos{
     padding: 1rem;
     width:75% !important;
   }
+
+
 
   #BloqueExp,
   #BloqueProyecto {
@@ -439,6 +449,10 @@ body,#Experiencia,#Proyectos{
 
 .logoredes:hover {
     transform: scale(1.1);
+}
+
+#bloquetextoa1qa{
+  padding:15px;
 }
 
 /* Estilos específicos para mobile */
