@@ -42,13 +42,10 @@ function toggleLanguage() {
 
     // Intro
     document.querySelector("#Intro h1").textContent = "Fernando Labriola";
-    document.querySelector("#Intro .lead").textContent = "Web Developer";
-    document.querySelector("#bio").innerHTML = `I’m a freelance web developer with experience in e-commerce and custom B2B systems.
-    I work with technologies like HTML, CSS, JavaScript, ASP.NET Core, and SQL Server.
-    I combine effective client communication with best development practices to deliver functional and scalable solutions.
-    English B2.`;
+    document.querySelector("#Intro .lead").textContent = "QA Tester & Web Developer";
+    document.querySelector("#bio").innerHTML = `QA Tester with experience in international companies such as a1qa, working entirely in English-speaking environments. Specialized in test automation using Selenium and Postman, as well as functional, regression, smoke, and acceptance testing. I also have experience as a freelance web developer using technologies like ASP.NET, C#, VB.NET, SQL Server, and JavaScript. I'm an advanced student of Systems Analysis, with a strong technical foundation and a focus on software quality.`;
     document.querySelector("#Intro .btn-success").textContent = "My Resume";
-    document.querySelector("#Intro .btn-success").href = "https://drive.google.com/drive/u/0/folders/1IGB8dv9jmRRDDK-BnD9RCBK5LZPK9Js9";
+    document.querySelector("#Intro .btn-success").href = "https://drive.google.com/file/d/1B3Ft3xTzKt4W7YE9BKAKsIpRbq_SV9H-/view?usp=sharing";
     document.getElementById('gmail').title = 'Send email';
 
     // Sección Experiencia
@@ -93,6 +90,7 @@ The project was version-controlled with Git and hosted on GitHub, making it easy
 
 
     // Sección Tecnologías
+    document.getElementById("TituloSectionTesting").textContent = "Testing Tools";
     document.getElementById("TituloSectionLeng").textContent = "Languages and Databases";
     document.getElementById("TituloSectionHer").textContent = "Tools";
 
@@ -131,13 +129,13 @@ The project was version-controlled with Git and hosted on GitHub, making it easy
 
     // Intro
     document.querySelector("#Intro h1").textContent = "Fernando Labriola";
-    document.querySelector("#Intro .lead").textContent = "Desarrollador Web";
-    document.querySelector("#bio").innerHTML = `Soy desarrollador web freelance con experiencia en e-commerce y sistemas B2B personalizados.
-    Trabajo con tecnologías como HTML, CSS, JavaScript, ASP.NET Core y SQL Server.
-    Combino una comunicación efectiva con clientes y buenas prácticas de desarrollo para entregar soluciones funcionales y escalables.
-    Inglés B2.`;
+    document.querySelector("#Intro .lead").textContent = "Tester QA y Desarrollador Web";
+    document.querySelector("#bio").innerHTML = `Cuento con experiencia en empresas internacionales como a1qa, trabajando como tester QA en entornos 100% en inglés.
+                    Especializado en automatización con Selenium y Postman, y en pruebas funcionales, de regresión, smoke y aceptación. 
+                    Además, cuento con experiencia como desarrollador web freelance utilizando tecnologías como ASP.NET, C#, VB.NET, SQL Server y JavaScript. 
+                    Soy estudiante avanzado de Análisis de Sistemas, con una sólida base técnica y enfoque en la calidad del software.`;
     document.querySelector("#Intro .btn-success").textContent = "Ver currículum";
-    document.querySelector("#Intro .btn-success").href = "https://drive.google.com/file/d/1aTB_82Uu-dfeb-zg-K-w4VMUUfVjDmrY/view?usp=sharing";
+    document.querySelector("#Intro .btn-success").href = "https://drive.google.com/file/d/19rn4iJIRrIbl33kkIfo_T2q7kI7H79cU/view?usp=sharing";
     document.getElementById('gmail').title = 'Enviar mail';
 
     // Sección Experiencia
@@ -182,6 +180,7 @@ El versionado fue gestionado con Git y GitHub. El diseño es responsive gracias 
 
 
     // Sección Tecnologías
+    document.getElementById("TituloSectionTesting").textContent = "Herramientas de Testing";
     document.getElementById("TituloSectionLeng").textContent = "Lenguajes y BD";
     document.getElementById("TituloSectionHer").textContent = "Herramientas";
 
