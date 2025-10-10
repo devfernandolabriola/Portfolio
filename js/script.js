@@ -1,17 +1,3 @@
-function GetNumber() {
-    number = +5491122534148;
-    return number;
-}
-
-
-function abrirWhatsapp() {
-  const numeroLimpio = GetNumber();
-  const mensaje = "¡Hola! Vi tu portfolio y estoy interesado en tus servicios.";
-  const mensajeCodificado = encodeURIComponent(mensaje);
-  const url = `https://wa.me/${numeroLimpio}?text=${mensajeCodificado}`;
-  window.open(url,'_blank');
-}
-
 function GetEmail(){
   const parts = ["fernandolabrioladev", "gmail.com"];
   return parts.join("@");
@@ -19,7 +5,8 @@ function GetEmail(){
 
 function enviarmail(){
     const email = GetEmail();
-    window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+    const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+    window.open(url, '_blank', 'noopener');
 }
 
 let currentLang = 'es';
@@ -45,7 +32,7 @@ function toggleLanguage() {
     document.querySelector("#Intro .lead").textContent = "QA Tester & Web Developer";
     document.querySelector("#bio").innerHTML = `QA Tester with experience in international companies such as a1qa, working entirely in English-speaking environments. Specialized in test automation using Selenium and Postman, as well as functional, regression, smoke, and acceptance testing. I also have experience as a freelance web developer using technologies like ASP.NET, C#, VB.NET, SQL Server, and JavaScript. I'm an advanced student of Systems Analysis, with a strong technical foundation and a focus on software quality.`;
     document.querySelector("#Intro .btn-success").textContent = "My Resume";
-    document.querySelector("#Intro .btn-success").href = "https://drive.google.com/file/d/1B3Ft3xTzKt4W7YE9BKAKsIpRbq_SV9H-/view?usp=sharing";
+    document.querySelector("#Intro .btn-success").href = "https://drive.google.com/file/d/1p5YDoauqVAmTEzMMgJiuH8PKuXm9ktGU/view?usp=sharing";
     document.getElementById('gmail').title = 'Send email';
 
     // Sección Experiencia
@@ -135,7 +122,7 @@ The project was version-controlled with Git and hosted on GitHub, making it easy
                     Además, cuento con experiencia como desarrollador web freelance utilizando tecnologías como ASP.NET, C#, VB.NET, SQL Server y JavaScript. 
                     Soy estudiante avanzado de Análisis de Sistemas, con una sólida base técnica y enfoque en la calidad del software.`;
     document.querySelector("#Intro .btn-success").textContent = "Ver currículum";
-    document.querySelector("#Intro .btn-success").href = "https://drive.google.com/file/d/19rn4iJIRrIbl33kkIfo_T2q7kI7H79cU/view?usp=sharing";
+    document.querySelector("#Intro .btn-success").href = "https://drive.google.com/file/d/1hR0_eEP6tzbYs3ErXKK0FXnr_8QkHrEK/view?usp=sharing";
     document.getElementById('gmail').title = 'Enviar mail';
 
     // Sección Experiencia
